@@ -45,17 +45,18 @@ main {
 
 #main-picture {
     background-color: black;
+    background-image: linear-gradient( to left, rgba(76, 158, 235, 0.8), rgba(6, 42, 75, 0.8)), url("../img/self_low.jpg");
+    background-position: top;
+    background-size: cover;
     width: 50%;
     height: 100vh;
     padding: 30px;
-    /* box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1); */
 }
 
 #main-info {
     width: 50%;
     height: 100vh;
     padding: 30px;
-    /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1); */
     overflow-y: scroll;
 }
 
@@ -85,8 +86,6 @@ main {
         height: auto;
         flex-direction: column;
         column-width: auto;
-        /* width: 100%; */
-        /* width: 100vw; */
     }
     #main-picture {
         background-color: black;
@@ -122,6 +121,10 @@ main {
     color: var(--alt-text-color);
     text-decoration: none;
     color: white;
+}
+
+.contact li {
+    list-style: none;
 }
 
 .contact a:hover {
