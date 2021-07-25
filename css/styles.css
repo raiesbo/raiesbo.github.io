@@ -40,7 +40,8 @@ main {
     width: 50%;
     height: 100vh;
     padding: 30px;
-    animation: colorMod 200ms ease;
+    animation: popImg 500ms ease-in-out;
+    animation-fill-mode: backwards;
 }
 
 #main-info {
@@ -86,24 +87,6 @@ main {
     animation-fill-mode: backwards;
 }
 
-@media screen and (max-width: 1000px) {
-    main {
-        height: auto;
-        flex-direction: column;
-        column-width: auto;
-    }
-    #main-picture {
-        background-color: black;
-        width: 100%;
-        height: 100vh;
-    }
-    #main-info {
-        width: 100%;
-        height: auto;
-        overflow-y: auto;
-    }
-}
-
 /* CONTACT SECTION */
 
 .contact {
@@ -130,6 +113,33 @@ li {
 
 .contact a:hover {
     color: var(--special-text-color);
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        height: auto;
+        flex-direction: column;
+        column-width: auto;
+    }
+    #main-picture {
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+    }
+    #main-info {
+        width: 100%;
+        height: auto;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #main-header h1 {
+        font-size: 5vw;
+    }
+    #main-header p {
+        font-size: 3.5vw;
+    }
 }
 
 /* //////////// */
@@ -213,6 +223,38 @@ li {
     color: var(--alt-text-color);
 }
 
+/* ////////////// */
+
+/* CERTIFICATIONS */
+
+/* ////////////// */
+
+.certs {
+    font-size: 0.85rem;
+}
+
+.section-body {
+    width: 100%;
+}
+
+.certs ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.cert-name {
+    font-weight: 600;
+    margin-right: 5px;
+    display: inline;
+}
+
+.certs p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* ///////// */
 
 /* LANGUAGES */
@@ -246,7 +288,6 @@ li {
 
 @media screen and (max-width: 800px) {
     .sub-section {
-        /* margin-bottom: 20px; */
         display: flex;
         flex-direction: column;
         row-gap: 10px;
@@ -273,7 +314,7 @@ li {
         opacity: 0;
     }
     75% {
-        transform: translateX(10px);
+        transform: translateX(5px);
     }
     100% {
         transform: translateX(0);
@@ -287,10 +328,19 @@ li {
         opacity: 0;
     }
     75% {
-        transform: translateX(-10px);
+        transform: translateX(-5px);
     }
     100% {
         transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popImg {
+    0% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
