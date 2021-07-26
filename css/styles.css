@@ -1,6 +1,7 @@
 :root {
     --main-text-color: #000000;
     --alt-text-color: #636362;
+    --alt2-text-color: #aaa;
     --special-text-color: #4e9feb;
     --white-text-color: #fff;
 }
@@ -159,8 +160,6 @@ li {
     min-width: 150px;
 }
 
-/* .section-body {} */
-
 .section-title {
     /* color: var(--special-text-color); */
     background-image: linear-gradient( to right, rgb(61, 142, 218), rgba(76, 158, 235, 0.8));
@@ -172,18 +171,14 @@ li {
     /* background-color: red; */
 }
 
-.sub-section dl ul {
-    margin-top: 5px;
+.section-body {
+    font-size: 0.85rem;
 }
 
-.sub-section dl li {
-    margin-left: 20px;
-    list-style: disc;
-}
-
-.sub-section dt {
-    /* margin-top: 15px; */
-    font-weight: 700;
+.section-body ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
 }
 
 .sub-section .sub-job {
@@ -196,18 +191,52 @@ li {
     /* margin-bottom: 10px; */
 }
 
+/* //////// */
+
+/* PROJECTS */
+
+/* //////// */
+
+.project {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.projects-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: var(--alt2-text-color);
+    transition: 200ms ease;
+}
+
+.project-links a:hover {
+    color: var(--special-text-color);
+}
+
+.project-tech {
+    font-weight: 600;
+    font-style: italic;
+}
+
 /* ////// */
 
 /* SKILLS */
 
 /* ////// */
 
-.skills {
-    font-size: 0.85rem;
-}
-
 .skills ul {
-    /* font-size: 0.9rem; */
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -228,10 +257,6 @@ li {
 /* CERTIFICATIONS */
 
 /* ////////////// */
-
-.certs {
-    font-size: 0.85rem;
-}
 
 .section-body {
     width: 100%;
@@ -261,10 +286,6 @@ li {
 
 /* ///////// */
 
-.languages {
-    font-size: 0.85rem;
-}
-
 .languages ul {
     display: flex;
     flex-direction: column;
@@ -280,11 +301,11 @@ li {
     color: var(--alt-text-color);
 }
 
-/* ///////////////////////// */
+/* ///////////// */
 
-/* MEDIA QUERIES & ANIMATONS */
+/* MEDIA QUERIES */
 
-/* ///////////////////////// */
+/* ///////////// */
 
 @media screen and (max-width: 800px) {
     .sub-section {
@@ -293,6 +314,12 @@ li {
         row-gap: 10px;
     }
 }
+
+/* ///////// */
+
+/* ANIMATONS */
+
+/* ///////// */
 
 @keyframes popIn {
     0% {
