@@ -41,6 +41,9 @@ main {
     width: 50%;
     height: 100vh;
     padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     animation: popImg 500ms ease-in-out;
     animation-fill-mode: backwards;
 }
@@ -62,12 +65,19 @@ main {
 /* /////////// */
 
 #main-header {
-    /* margin-bottom: 20px; */
+    margin-bottom: 130px;
     text-align: center;
-    position: relative;
-    top: 75%;
     color: var(--white-text-color);
     overflow: hidden;
+}
+
+@media screen and (max-height: 400px) {
+    #main-picture {
+        align-items: center;
+    }
+    #main-header {
+        margin-bottom: 0;
+    }
 }
 
 #main-header h1 {
@@ -228,6 +238,35 @@ li {
 .project-tech {
     font-weight: 600;
     font-style: italic;
+}
+
+/* ///////// */
+
+/* EDUCATION */
+
+/* ///////// */
+
+.education header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.education header .extra {
+    color: var(--alt-text-color);
+    font-size: 0.8rem;
+}
+
+.education ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.education p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* ////// */
