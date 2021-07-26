@@ -44,8 +44,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    animation: popImg 500ms ease-in-out;
-    animation-fill-mode: backwards;
+    /* animation: popImg 500ms ease-in-out;
+    animation-fill-mode: backwards; */
 }
 
 #main-info {
@@ -108,9 +108,9 @@ main {
     width: 100%;
     /* margin-bottom: 20px; */
     margin-top: 20px;
-    /* animation: popIn 1s ease-out;
+    animation: popIn 1s ease-out;
     animation-delay: 600ms;
-    animation-fill-mode: backwards; */
+    animation-fill-mode: backwards;
 }
 
 .contact a {
@@ -167,6 +167,10 @@ li {
     column-gap: 10px;
 }
 
+.section-body {
+    width: 100%;
+}
+
 .section-header {
     min-width: 150px;
 }
@@ -192,14 +196,9 @@ li {
     row-gap: 25px;
 }
 
-.sub-section .sub-job {
-    color: var(--alt-text-color);
-}
-
-.sub-section dd, .sub-section p {
+.sub-section p {
     color: var(--alt-text-color);
     font-size: 0.85rem;
-    /* margin-bottom: 10px; */
 }
 
 /* ////// */
@@ -242,10 +241,6 @@ li {
     justify-content: space-between;
 }
 
-.project-name {
-    /* font-weight: 600; */
-}
-
 .project-links {
     display: flex;
     flex-direction: row;
@@ -273,26 +268,27 @@ li {
 
 /* ///////// */
 
+.edu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
 .education header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.edu-name {
-    /* font-weight: 600; */
+.university {
+    font-weight: 600;
+    font-style: italic;
 }
 
 .education header .extra {
     color: var(--alt-text-color);
     font-size: 0.8rem;
 }
-
-/* .education ul {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-} */
 
 .education p {
     display: flex;
@@ -313,7 +309,7 @@ li {
 .job {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 5px;
 }
 
 .job__info {
@@ -348,26 +344,21 @@ li {
 
 /* ////////////// */
 
-.section-body {
-    width: 100%;
-}
-
-/* .certs ul {
+.cert {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
-} */
-
-.cert-name {
-    /* font-weight: 600; */
-    margin-right: 5px;
-    display: inline;
+    row-gap: 5px;
 }
 
 .certs p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.cert-academy {
+    font-weight: 600;
+    font-style: italic;
 }
 
 .cert-date {
@@ -392,7 +383,6 @@ li {
 }
 
 .languages .language {
-    /* font-weight: 600; */
     margin-right: 10px;
 }
 
