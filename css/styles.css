@@ -51,10 +51,10 @@ main {
 #main-info {
     width: 50%;
     height: 100vh;
-    padding: 30px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 60px;
     overflow-y: scroll;
 }
 
@@ -108,9 +108,9 @@ main {
     width: 100%;
     /* margin-bottom: 20px; */
     margin-top: 20px;
-    animation: popIn 1s ease-out;
+    /* animation: popIn 1s ease-out;
     animation-delay: 600ms;
-    animation-fill-mode: backwards;
+    animation-fill-mode: backwards; */
 }
 
 .contact a {
@@ -139,6 +139,7 @@ li {
     }
     #main-info {
         width: 100%;
+        padding: 60px 20px;
         height: auto;
         overflow-y: auto;
     }
@@ -163,7 +164,7 @@ li {
     /* margin-bottom: 20px; */
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 10px;
 }
 
 .section-header {
@@ -188,7 +189,7 @@ li {
 .section-body ul {
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
+    row-gap: 25px;
 }
 
 .sub-section .sub-job {
@@ -201,6 +202,28 @@ li {
     /* margin-bottom: 10px; */
 }
 
+/* ////// */
+
+/* SKILLS */
+
+/* ////// */
+
+.skills ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.skills .skill-category {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.skills .skill-list {
+    word-spacing: 5px;
+    color: var(--alt-text-color);
+}
+
 /* //////// */
 
 /* PROJECTS */
@@ -210,13 +233,17 @@ li {
 .project {
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
+    row-gap: 10px;
 }
 
 .projects-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.project-name {
+    /* font-weight: 600; */
 }
 
 .project-links {
@@ -252,16 +279,20 @@ li {
     justify-content: space-between;
 }
 
+.edu-name {
+    /* font-weight: 600; */
+}
+
 .education header .extra {
     color: var(--alt-text-color);
     font-size: 0.8rem;
 }
 
-.education ul {
+/* .education ul {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-}
+} */
 
 .education p {
     display: flex;
@@ -269,26 +300,46 @@ li {
     justify-content: space-between;
 }
 
-/* ////// */
+.education .date {
+    font-size: 0.8rem;
+}
 
-/* SKILLS */
+/* ////////// */
 
-/* ////// */
+/* EXPERIENCE */
 
-.skills ul {
+/* ////////// */
+
+.job {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 
-.skills .skill-category {
-    font-weight: 600;
-    margin-right: 5px;
+.job__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.skills .skill-list {
-    word-spacing: 5px;
-    color: var(--alt-text-color);
+.job__info--company {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.job__info--date {
+    font-size: 0.8rem;
+}
+
+.job .job__description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-left: 15px;
+}
+
+.job__description__item {
+    list-style-type: square;
 }
 
 /* ////////////// */
@@ -301,14 +352,14 @@ li {
     width: 100%;
 }
 
-.certs ul {
+/* .certs ul {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-}
+} */
 
 .cert-name {
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-right: 5px;
     display: inline;
 }
@@ -317,6 +368,10 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.cert-date {
+    font-size: 0.8rem;
 }
 
 /* ///////// */
@@ -328,12 +383,17 @@ li {
 .languages ul {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 15px;
+}
+
+.languages li {
+    display: flex;
+    flex-direction: row;
 }
 
 .languages .language {
-    font-weight: 600;
-    margin-right: 5px;
+    /* font-weight: 600; */
+    margin-right: 10px;
 }
 
 .languages .language-level {
