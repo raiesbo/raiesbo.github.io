@@ -8,4 +8,5 @@ GitHub Pages
 
 ### Interesting details:
 - CSS animations
+- CSS pseudo-class
 - Linear gradient background with image

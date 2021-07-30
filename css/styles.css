@@ -44,8 +44,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    /* animation: popImg 500ms ease-in-out;
-    animation-fill-mode: backwards; */
+    animation: popImg 500ms ease-in-out;
+    animation-fill-mode: backwards;
 }
 
 #main-info {
@@ -56,6 +56,16 @@ main {
     flex-direction: column;
     row-gap: 60px;
     overflow-y: scroll;
+}
+
+/* hover to give opacity to other sections and focus on the hovered one */
+
+/* #main-info:hover .sub-section:not(:hover) {
+    opacity: 0.3;
+} */
+
+#main-info:hover .section-body:not(:hover) {
+    opacity: 0.3;
 }
 
 /* /////////// */
@@ -165,10 +175,12 @@ li {
     display: flex;
     flex-direction: row;
     column-gap: 10px;
+    transition: all 0.2s;
 }
 
 .section-body {
     width: 100%;
+    transition: all 0.2s;
 }
 
 .section-header {
