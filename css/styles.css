@@ -64,9 +64,11 @@ main {
     opacity: 0.3;
 } */
 
+/*
 #main-info:hover .section-body:not(:hover) {
     opacity: 0.3;
 }
+*/
 
 /* /////////// */
 
