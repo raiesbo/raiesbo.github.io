@@ -1,11 +1,13 @@
 import messages from '../config/messages.js';
+import translator from '../assets/translator.js';
 
-const {header} = messages;
+const {header, sections} = messages;
 
 // VARIABLES
 const name = document.querySelector("#name");
 const title = document.querySelector("#title");
 const contactLinks = document.querySelector("#contact-links");
+const profile = document.querySelector("#profile");
 // const skillsList = document.querySelector("#skills");
 
 
@@ -42,3 +44,7 @@ const contactLinksFiller = (arr) => {
 
 contactLinksFiller(header.links)
 
+
+// SECTIONS MESSAGE ASSIGMENT
+const profileContent = translator(sections.profile);
+profile.appendChild(profileContent)
