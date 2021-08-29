@@ -37,7 +37,7 @@ const messages = {
     },
     sections: {
         profile: [
-            "I am a Berlin-based Web developer driven by design and specialized in Front-End, although I also enjoy working on the server side, and I am willing to learn any technology in order to get the desired results.",
+            "I am a Berlin-based **Web developer** driven by design and specialized in **Front-End**, although I also enjoy working on the server side, and I am willing to learn any technology in order to get the desired results.",
             "Passionate about the details, I enjoy writing well-written and efficient code that translates into attractive and functional interfaces with modern frameworks. My 5-year experience as an architect has taught me not only the design and project development principles but also team work, collective ownership, empathy and constant learning mindset."
         ],
         skills: [
