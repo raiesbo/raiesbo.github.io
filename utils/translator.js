@@ -1,4 +1,4 @@
-export default function translator (arr) {
+export default function profileTranslator (arr, parentElement) {
     const text = document.createElement("p");
 
     for (let i = 0; i < arr.length; i++) {
@@ -28,5 +28,5 @@ export default function translator (arr) {
 
     }
 
-    return text
+    parentElement.appendChild(text);
 };

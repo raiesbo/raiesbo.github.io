@@ -1,5 +1,6 @@
 import messages from '../config/messages.js';
-import translator from '../assets/translator.js';
+import contactLinksFiller from '../utils/contactLinksFiller.js';
+import profileTranslator from '../utils/translator.js';
 
 const {header, sections} = messages;
 
@@ -14,37 +15,10 @@ const profile = document.querySelector("#profile");
 // HEADER MESSAGE ASSIGNMENT
 name.textContent = header.name;
 title.textContent = header.title;
-
-const contactLinksFiller = (arr) => {
-    for(let j = 0; j < arr.length; j++) {
-        const {name, url, icon} = arr[j]
-
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        const i = document.createElement('i');
-
-        // add anchor attributes
-        a.setAttribute("target", "_blank");
-        a.setAttribute("rel", "noreferrer");
-        a.setAttribute("href", url);
-
-        // adding icon classes
-        const classesList = icon.split(" ");
-        for (let x = 0; x <= classesList.length; x++) {
-            i.classList.add(classesList[x])
-        }
-        i.setAttribute("title", name);
-
-        a.appendChild(i);
-        li.appendChild(a);
-
-        contactLinks.appendChild(li);
-    }
-}
-
-contactLinksFiller(header.links)
+// - contact links (icons)
+contactLinksFiller(header.links, contactLinks)
 
 
 // SECTIONS MESSAGE ASSIGMENT
-const profileContent = translator(sections.profile);
-profile.appendChild(profileContent)
+// - profile
+profileTranslator(sections.profile, profile);
