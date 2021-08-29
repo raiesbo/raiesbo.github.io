@@ -29,44 +29,9 @@
         <article id="main-picture">
             <!-- <img src="" alt="myPicture"> -->
             <header id="main-header">
-                <h1>Raimon Espasa Bou</h1>
-                <p>Berlin based Full-Stack Web Developer</p>
-                <ul class="contact">
-                    <li>
-                        <a href="mailto:raiesbo@gmail.com" target="_blank" rel="noreferrer">
-                            <i class="far fa-envelope" title="Email"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://codepen.io/raiesbo" target="_blank" rel="noreferrer">
-                            <i class="fab fa-codepen" title="CodePen"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.freecodecamp.org/raiesbo" target="_blank" rel="noreferrer">
-                            <i class="fab fa-free-code-camp" title="freeCodeCamp"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/raiesbo/" target="_blank" rel="noreferrer">
-                            <i class="fab fa-linkedin-in" title="LinkedIn"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/raiesbo" target="_blank" rel="noreferrer">
-                            <i class="fab fa-github-alt" title="GitHub"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://raiesbo.com" target="_blank" rel="noreferrer">
-                            <i class="fas fa-home" title="Portfolio"></i>
-                        </a>
-                    </li>
-                    <!-- <li>
-                        <a href="https://archive.raiesbo.com/" target="_blank">
-                            <i class="fas fa-archive" title="Archive"></i>
-                        </a>
-                    </li> -->
+                <h1 id="name"></h1>
+                <p id="title"></p>
+                <ul class="contact" id="contact-links">
                 </ul>
             </header>
         </article>
@@ -93,7 +58,7 @@
                     <h3 class="section-title">Skills</h3>
                 </header>
                 <div class="section-body">
-                    <ul>
+                    <ul id="skills">
                         <li>
                             <span class="skill-category">Languages:</span>
                             <span class="skill-list">JavaScript, HTML, CSS, Python</span>
@@ -403,8 +368,9 @@
 
     </footer> -->
 
+    <script type="module" src="assets/app.js" async defer></script>
     <script src="assets/animation.js" async defer></script>
-    <!-- <script src="assets/fadeOut.js" async defer></script> -->
+    <!--  <script src="assets/fadeOut.js" async defer></script> -->
 </body>
 
 </html>

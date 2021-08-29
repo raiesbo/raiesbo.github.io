@@ -128,6 +128,7 @@ main {
 .contact a {
     text-decoration: none;
     color: var(--white-text-color);
+    transition: 0.2s ease;
 }
 
 li {
