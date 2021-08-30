@@ -102,12 +102,13 @@ main {
     animation-fill-mode: backwards;
 }
 
-#main-header p {
+#main-header h2 {
     font-weight: 700;
     letter-spacing: 1px;
     animation: popInRight 1s ease-out;
     animation-delay: 600ms;
     animation-fill-mode: backwards;
+    font-size: 1rem;
 }
 
 /* CONTACT SECTION */

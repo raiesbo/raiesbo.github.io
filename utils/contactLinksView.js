@@ -1,4 +1,4 @@
-export default function contactLinksFiller (arr, parentElement) {
+export default function contactLinksView (arr, parentElement) {
     for(let j = 0; j < arr.length; j++) {
         const {name, url, icon} = arr[j]
 

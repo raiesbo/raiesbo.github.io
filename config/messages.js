@@ -66,6 +66,10 @@ const messages = {
                 links: {
                     repo: "https://github.com/raiesbo/devPortfolio",
                     website: "https://raiesbo.com/"
+                },
+                icons: {
+                    repo: "fab fa-github-square fa-lg",
+                    website: "fas fa-external-link-square-alt fa-lg"
                 }
             },
             {
@@ -75,6 +79,10 @@ const messages = {
                 links: {
                     repo: "https://github.com/raiesbo/octocatProfile_v2",
                     website: "https://octocat.raiesbo.com/"
+                },
+                icons: {
+                    repo: "fab fa-github-square fa-lg",
+                    website: "fas fa-external-link-square-alt fa-lg"
                 }
             },
             {
@@ -84,6 +92,10 @@ const messages = {
                 links: {
                     repo: "https://github.com/raiesbo/webDevArchive",
                     website: "https://archive.raiesbo.com/"
+                },
+                icons: {
+                    repo: "fab fa-github-square fa-lg",
+                    website: "fas fa-external-link-square-alt fa-lg"
                 }
             }
         ],
