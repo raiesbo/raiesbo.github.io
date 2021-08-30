@@ -58,10 +58,133 @@ const messages = {
                 content: "Photoshop, Figma. Illustrator, InDesign"
             }
         ],
-        projects: "",
-        education: "",
-        certs: "",
-        languages: ""
+        projects: [
+            {
+                title: "raiesbo.com",
+                technologies: "React, Sass",
+                description: "Online web portfolio where to describe some professional skills, experience, background, progress and showcase featured projects in the software development, web application and websites context.",
+                links: {
+                    repo: "https://github.com/raiesbo/devPortfolio",
+                    website: "https://raiesbo.com/"
+                }
+            },
+            {
+                title: "octocat Profiler",
+                technologies: "React, CSS, Node, Express, GitHub API, D3.js.",
+                description: "Improved version of the octocat Profiler v1. In this new version, the application counts with server end points to fetch and process the data from the GitHub API and be more efficient. Also includes new graphs in D3.js.",
+                links: {
+                    repo: "https://github.com/raiesbo/octocatProfile_v2",
+                    website: "https://octocat.raiesbo.com/"
+                }
+            },
+            {
+                title: "webDevArchive",
+                technologies: "React, CSS, Node, Express, MongoDB.",
+                description: "List of all the finished and on going projects untill the current date. Each project contains github/urls links if available and is organiced by date so the top projects are the most current ones.",
+                links: {
+                    repo: "https://github.com/raiesbo/webDevArchive",
+                    website: "https://archive.raiesbo.com/"
+                }
+            }
+        ],
+        education: [
+            {
+                title: "Postgrad. Web Development and Design",
+                university: "Open University of Catalonia",
+                date: "2021 - Present",
+                extraInfo: null
+            },
+            {
+                title: "Architecture",
+                university: "Warsaw University of Technology",
+                date: "2014 - 2015",
+                extraInfo: "Erasmus Exchange Program"
+            },
+            {
+                title: "Architecture",
+                university: "Technical University of Valencia",
+                date: "2010 - 2016",
+                extraInfo: null
+            }
+        ],
+        experience: [
+            {
+                position: "Full Stack Developer",
+                company: "Webgears Group",
+                place: "Berlin, Germany",
+                date: "08.2021 - present",
+                tasks: [
+                    "Teamwork in an international and multidisciplinary environment with flat team hierarchie and collective ownership of the projects.",
+                    "Workflow in architecture competitions similar to agile methodology.",
+                    "Website management with tasks such as updating the project or writing and publishing articles."
+                ]
+            },
+            {
+                position: "Architect",
+                company: "rundzwei Architekten",
+                place: "Berlin, Germany",
+                date: "04.2017 - 07.2021",
+                tasks: [
+                    "Teamwork in an international and multidisciplinary environment with flat team hierarchie and collective ownership of the projects.",
+                    "Workflow in architecture competitions similar to agile methodology.",
+                    "Website management with tasks such as updating the project or writing and publishing articles."
+                ]
+            },
+            {
+                position: "Architect Intern",
+                company: "Funkciona Architekti",
+                place: "Warsaw, Poland",
+                date: "10.2016 - 03.2017",
+                tasks: [
+                    "Frequent business trips to visit construction sites in different countries of the European Union.",
+                    "Permanent contact with contractors and disciplines coordination."
+                ]
+            },
+            {
+                position: "Architect Intern",
+                company: "Antonio Altarriba Architects",
+                place: "Valencia, Germany",
+                date: "09.2015 - 07.2016",
+                tasks: [
+                    "3d modelling and rendering with Rhino 3d, vray and video-renderings with Lumion."
+                ]
+            }
+        ],
+        certs: [
+            {
+                title: "Responsive Web Design",
+                school: "FreeCodeCamp",
+                date: 2021
+            },
+            {
+                title: "APIs and Microservices",
+                school: "FreeCodeCamp",
+                date: 2021
+            },
+            {
+                title: "JavaScript Algorithms and Data Structures",
+                school: "FreeCodeCamp",
+                date: 2020
+            }
+        ],
+        languages: [
+            {
+                language: "Spanish",
+                level: "Native"
+            },
+            {
+                language: "Catalan",
+                level: "Native"
+            },
+            {
+                language: "German",
+                level: "Upper intermediate"
+            },
+            {
+                language: "English",
+                level: "Working Proficiency"
+            },
+        ]
     }
 };
 
