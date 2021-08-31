@@ -121,13 +121,14 @@ const messages = {
         ],
         experience: [
             {
-                position: "Full Stack Developer",
+                position: "Trainee Full Stack Developer",
                 company: "Webgears Group",
                 place: "Berlin, Germany",
                 date: "08.2021 - present",
                 tasks: [
-                    "Next.js aplication developement for multiple voucher white-labels and self-standing websites. ",
-                    "E2E, visual reguression and unit testing implementation using Cypress and Jest."
+                    "Next.js aplication developement for multiple voucher white-labels and portals. ",
+                    "Unit, E2E, Regression testing implementation using Cypress and Jest.",
+                    "Web optimization for better performing in lighthouse"
                 ]
             },
             {
@@ -154,7 +155,7 @@ const messages = {
             {
                 position: "Architect Intern",
                 company: "Antonio Altarriba Architects",
-                place: "Valencia, Germany",
+                place: "Valencia, Spain",
                 date: "09.2015 - 07.2016",
                 tasks: [
                     "3d modelling and rendering with Rhino 3d, vray and video-renderings with Lumion."

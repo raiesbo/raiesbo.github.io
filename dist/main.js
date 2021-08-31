@@ -6,6 +6,28 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ popAnimation)
+/* harmony export */ });
+function popAnimation () {
+    const titles = document.querySelectorAll(".section-title");
+    const bodies = document.querySelectorAll(".section-body");
+    
+    for (let i = 0; i < titles.length; i++) {
+        const title = titles[i];
+        title.style.animation = `popIn 400ms ease-out ${(400 * i) + 1600}ms`;
+        title.style.animationFillMode = "backwards";
+    
+        const body = bodies[i];
+        body.style.animation = `popIn 400ms ease-out ${(400 * i) + 1800}ms`;
+        body.style.animationFillMode = "backwards";
+    }
+}
+
+/***/ }),
+/* 2 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 const messages = {
@@ -131,13 +153,14 @@ const messages = {
         ],
         experience: [
             {
-                position: "Full Stack Developer",
+                position: "Trainee Full Stack Developer",
                 company: "Webgears Group",
                 place: "Berlin, Germany",
                 date: "08.2021 - present",
                 tasks: [
-                    "Next.js aplication developement for multiple voucher white-labels and self-standing websites. ",
-                    "E2E, visual reguression and unit testing implementation using Cypress and Jest."
+                    "Next.js aplication developement for multiple voucher white-labels and portals. ",
+                    "Unit, E2E, Regression testing implementation using Cypress and Jest.",
+                    "Web optimization for better performing in lighthouse"
                 ]
             },
             {
@@ -164,7 +187,7 @@ const messages = {
             {
                 position: "Architect Intern",
                 company: "Antonio Altarriba Architects",
-                place: "Valencia, Germany",
+                place: "Valencia, Spain",
                 date: "09.2015 - 07.2016",
                 tasks: [
                     "3d modelling and rendering with Rhino 3d, vray and video-renderings with Lumion."
@@ -212,7 +235,7 @@ const messages = {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (messages);
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -246,7 +269,7 @@ function contactLinksView (arr, parentElement) {
 }
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -286,7 +309,7 @@ function profileTranslator (arr, parentElement) {
 };
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -311,7 +334,7 @@ function skillsView(arr, parentElement) {
 }
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -380,7 +403,7 @@ const addClassList = (element, classList) => {
 };
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -391,7 +414,7 @@ function educationView (arr, parentElement) {
 };
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -399,10 +422,55 @@ function educationView (arr, parentElement) {
 /* harmony export */ });
 function experienceView (arr, parentElement) {
 
+    for (let i = 0; i < arr.length; i++) {
+        const job = arr[i];
+
+        // header
+        const li = document.createElement("li");
+        li.classList.add("job");
+
+        const header = document.createElement("header");
+        const h4 = document.createElement("h4");
+        h4.classList.add("job__title");
+        h4.textContent = job.position;
+
+        header.appendChild(h4)
+
+        // specs
+        const p = document.createElement("p");
+        p.classList.add("job__info");
+
+        const spanCompany = document.createElement("span");
+        spanCompany.classList.add("job__info--company");
+        spanCompany.textContent = job.company;
+
+        const spanDate = document.createElement("span");
+        spanDate.classList.add("job__info--date");
+        spanDate.textContent = `${job.place} | ${job.date}`;
+
+        p.append(spanCompany, spanDate);
+
+        // description
+        const ul = document.createElement("lu");
+        ul.classList.add("job__description");
+
+        for (let j = 0; j < job.tasks.length; j++) {
+            const liTask = document.createElement("li");
+            liTask.classList.add("job__description__item");
+            liTask.textContent = job.tasks[j];
+            console.log(job.tasks[j]);
+            ul.appendChild(liTask);
+        }
+
+        // append to view
+        li.append(header, p, ul);
+        parentElement.appendChild(li);
+    }
+
 };
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -413,7 +481,7 @@ function certsView (arr, parentElement) {
 };
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -472,8 +540,8 @@ function languagesView (arr, parentElement) {
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/* harmony import */ var _config_messages_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _animations_animation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _config_messages_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5);
@@ -481,10 +549,14 @@ var __webpack_exports__ = {};
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(10);
 
 
 
-const {header, sections} = _config_messages_js__WEBPACK_IMPORTED_MODULE_0__.default;
+
+(0,_animations_animation_js__WEBPACK_IMPORTED_MODULE_0__.default)();
+
+const {header, sections} = _config_messages_js__WEBPACK_IMPORTED_MODULE_1__.default;
 const {profile, skills, projects, education, experience, certs, languages} = sections;
 
 // VARIABLES LEFT
@@ -506,24 +578,24 @@ const languagesSection = document.querySelector("#languages");
 name.textContent = header.name;
 title.textContent = header.title;
 // - contact links (icons)
-(0,_utils__WEBPACK_IMPORTED_MODULE_1__.default)(header.links, contactLinks)
+(0,_utils__WEBPACK_IMPORTED_MODULE_2__.default)(header.links, contactLinks)
 
 
 // SECTIONS MESSAGE ASSIGMENT
 // - profile
-;(0,_utils__WEBPACK_IMPORTED_MODULE_2__.default)(profile, profileSection);
+;(0,_utils__WEBPACK_IMPORTED_MODULE_3__.default)(profile, profileSection);
 // - skills
-(0,_utils__WEBPACK_IMPORTED_MODULE_3__.default)(skills, skillsSection);
+(0,_utils__WEBPACK_IMPORTED_MODULE_4__.default)(skills, skillsSection);
 // - projects
-(0,_utils__WEBPACK_IMPORTED_MODULE_4__.default)(projects, projectsSection);
+(0,_utils__WEBPACK_IMPORTED_MODULE_5__.default)(projects, projectsSection);
 // - education
-(0,_utils__WEBPACK_IMPORTED_MODULE_5__.default)(education, educationSection);
+(0,_utils__WEBPACK_IMPORTED_MODULE_6__.default)(education, educationSection);
 // - experience
-(0,_utils__WEBPACK_IMPORTED_MODULE_6__.default)(experience, experienceSection);
+(0,_utils__WEBPACK_IMPORTED_MODULE_7__.default)(experience, experienceSection);
 // - certs
-(0,_utils__WEBPACK_IMPORTED_MODULE_7__.default)(certs, certsSection);
+(0,_utils__WEBPACK_IMPORTED_MODULE_8__.default)(certs, certsSection);
 // - languages
-(0,_utils__WEBPACK_IMPORTED_MODULE_8__.default)(languages, languagesSection);
+(0,_utils__WEBPACK_IMPORTED_MODULE_9__.default)(languages, languagesSection);
 
 
 })();

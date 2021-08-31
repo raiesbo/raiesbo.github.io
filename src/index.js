@@ -1,3 +1,4 @@
+import popAnimation from './animations/animation.js';
 import messages from './config/messages.js';
 import {
     contactLinksView,
@@ -9,6 +10,8 @@ import {
     certsView,
     languagesView
 } from './utils';
+
+popAnimation();
 
 const {header, sections} = messages;
 const {profile, skills, projects, education, experience, certs, languages} = sections;
