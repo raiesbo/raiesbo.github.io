@@ -126,9 +126,8 @@ const messages = {
                 place: "Berlin, Germany",
                 date: "08.2021 - present",
                 tasks: [
-                    "Teamwork in an international and multidisciplinary environment with flat team hierarchie and collective ownership of the projects.",
-                    "Workflow in architecture competitions similar to agile methodology.",
-                    "Website management with tasks such as updating the project or writing and publishing articles."
+                    "Next.js aplication developement for multiple voucher white-labels and self-standing websites. ",
+                    "E2E, visual reguression and unit testing implementation using Cypress and Jest."
                 ]
             },
             {
