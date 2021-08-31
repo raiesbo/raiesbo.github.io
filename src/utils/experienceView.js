@@ -36,7 +36,6 @@ export default function experienceView (arr, parentElement) {
             const liTask = document.createElement("li");
             liTask.classList.add("job__description__item");
             liTask.textContent = job.tasks[j];
-            console.log(job.tasks[j]);
             ul.appendChild(liTask);
         }
 

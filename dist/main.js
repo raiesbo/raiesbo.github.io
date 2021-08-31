@@ -160,7 +160,7 @@ const messages = {
                 tasks: [
                     "Next.js aplication developement for multiple voucher white-labels and portals. ",
                     "Unit, E2E, Regression testing implementation using Cypress and Jest.",
-                    "Web optimization for better performing in lighthouse"
+                    "Web optimization for better performance in Lighthouse"
                 ]
             },
             {
@@ -458,7 +458,6 @@ function experienceView (arr, parentElement) {
             const liTask = document.createElement("li");
             liTask.classList.add("job__description__item");
             liTask.textContent = job.tasks[j];
-            console.log(job.tasks[j]);
             ul.appendChild(liTask);
         }
 
