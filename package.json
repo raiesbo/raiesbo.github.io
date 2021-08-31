@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "GitHub Pages",
   "private": true,
+  "sideEffects": ["./src/*"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "npx webpack --config webpack.config.js"
+    "compile": "npx webpack --config webpack.config.js",
+    "bild:watch": "webpack --watch",
+    "bild": "webpack"
   },
   "repository": {
     "type": "git",
