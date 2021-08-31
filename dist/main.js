@@ -481,16 +481,6 @@ var __webpack_exports__ = {};
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9);
-/*
-import messages from './config/messages.js';
-import contactLinksView from './utils/contactLinksView.js';
-import profileTranslator from './utils/translator.js';
-import skillsView from './utils/skillsView.js';
-import projectsView from './utils/projectsView.js';
-import educationView from './utils/educationView.js';
-import experienceView from './utils/experienceView.js';
-import certsView from './utils/certsView.js';
-import languagesView from './utils/languagesView.js';*/
 
 
 
