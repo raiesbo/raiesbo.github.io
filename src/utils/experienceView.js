@@ -29,7 +29,7 @@ export default function experienceView (arr, parentElement) {
         p.append(spanCompany, spanDate);
 
         // description
-        const ul = document.createElement("lu");
+        const ul = document.createElement("ul");
         ul.classList.add("job__description");
 
         for (let j = 0; j < job.tasks.length; j++) {
