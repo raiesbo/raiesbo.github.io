@@ -121,7 +121,7 @@ const messages = {
         ],
         experience: [
             {
-                position: "Trainee Full Stack Developer",
+                position: "Full Stack Developer",
                 company: "Webgears Group",
                 place: "Berlin, Germany",
                 date: "08.2021 - present",

@@ -53,4 +53,3 @@ experienceView(experience, experienceSection);
 certsView(certs, certsSection);
 // - languages
 languagesView(languages, languagesSection);
-
