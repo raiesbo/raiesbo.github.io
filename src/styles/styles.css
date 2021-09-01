@@ -348,6 +348,7 @@ li {
     flex-direction: column;
     row-gap: 5px;
     margin-left: 15px;
+    color: var(--alt-text-color);
 }
 
 .job__description__item {
