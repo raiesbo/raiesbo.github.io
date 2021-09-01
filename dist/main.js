@@ -410,7 +410,35 @@ const addClassList = (element, classList) => {
 /* harmony export */   "default": () => (/* binding */ educationView)
 /* harmony export */ });
 function educationView (arr, parentElement) {
+    for (let i = 0; i < arr.length; i++) {
+        const edu = arr[i];
 
+        const li = document.createElement("li");
+        li.classList.add("edu");
+
+        const header = document.createElement("header");
+        const h4 = document.createElement("h4");
+        h4.classList.add("edu-name");
+        h4.textContent = edu.title;
+
+        header.appendChild(h4)
+
+        const p = document.createElement("p");
+        p.classList.add("edu__info");
+        
+        const spanUni = document.createElement("span");
+        spanUni.classList.add("university");
+        spanUni.textContent = edu.university;
+
+        const spanDate = document.createElement("span");
+        spanDate.classList.add("date");
+        spanDate.textContent = edu.date;
+
+        p.append(spanUni, spanDate);
+
+        li.append(header, p);
+        parentElement.appendChild(li);
+    }
 };
 
 /***/ }),
@@ -476,7 +504,33 @@ function experienceView (arr, parentElement) {
 /* harmony export */   "default": () => (/* binding */ certsView)
 /* harmony export */ });
 function certsView (arr, parentElement) {
+    for (let i = 0; i < arr.length; i++) {
+        const cert = arr[i];
 
+        const li = document.createElement('li');
+        li.classList.add("cert");
+
+        const header = document.createElement("header");
+        const h4 = document.createElement("h4");
+        h4.classList.add("cert-name");
+        h4.textContent = cert.title;
+
+        header.appendChild(h4);
+
+        const p = document.createElement("p");
+        const spanAcademy = document.createElement("span");
+        spanAcademy.classList.add("cert-academy");
+        spanAcademy.textContent = cert.school;
+
+        const spanDate = document.createElement("span");
+        spanDate.classList.add("cert-date");
+        spanDate.textContent = cert.date;
+
+        p.append(spanAcademy, spanDate);
+
+        li.append(header, p);
+        parentElement.appendChild(li);
+    }
 };
 
 /***/ }),
