@@ -621,6 +621,9 @@ var __webpack_exports__ = {};
 
 
 
+//import './styles/styles.css';
+//import './styles/translateClasses.css';
+
 (0,_animations_animation_js__WEBPACK_IMPORTED_MODULE_0__.default)();
 
 const {header, sections} = _config_messages_js__WEBPACK_IMPORTED_MODULE_1__.default;

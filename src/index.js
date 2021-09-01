@@ -11,6 +11,9 @@ import {
     languagesView
 } from './utils';
 
+//import './styles/styles.css';
+//import './styles/translateClasses.css';
+
 popAnimation();
 
 const {header, sections} = messages;
