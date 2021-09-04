@@ -12,7 +12,7 @@ import {
 } from './utils';
 
 // import './css/styles.css';
-//import css from './css/translateClasses.css';
+// import css from './css/translateClasses.css';
 
 popAnimation();
 
