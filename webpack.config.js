@@ -1,32 +1,29 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+
+const styleRules = {
+    test: /\.css$/i,
+    use: ['style-loader', 'css-loader'],
+}
+
+const rules = [styleRules]
 
 module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'built')
     },
     mode: 'none',
-    optimization: {
-        usedExports: true
-    },
+    plugins: [
+        new HtmlWebpackPlugin({ template: "index.html" })
+    ],
     devServer: {
-        static: {
-            directory: path.join(__dirname, ""),
-        },
-        compress: true,
+        open: true, // open webpage with correct port page
+        // compress: true,
         port: 9000,
     },
     module : {
-        rules: [
-            {
-                test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
-            },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resources',
-            }
-        ]
+        rules: rules,
     }
 }

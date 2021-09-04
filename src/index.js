@@ -11,8 +11,8 @@ import {
     languagesView
 } from './utils';
 
-//import './styles/styles.css';
-//import './styles/translateClasses.css';
+// import './css/styles.css';
+//import css from './css/translateClasses.css';
 
 popAnimation();
 
