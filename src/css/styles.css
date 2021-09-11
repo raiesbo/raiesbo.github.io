@@ -278,6 +278,26 @@ li {
     font-style: italic;
 }
 
+a.btn {
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #4e9feb;
+    text-align: center;
+    color:#4e9feb;
+    font-weight: 700;
+    margin-top: 20px;
+    letter-spacing: 1px;
+
+    transition: 100ms ease;
+}
+
+a.btn:hover {
+    color: white;
+    background-image: linear-gradient( to right, rgb(61, 142, 218), rgba(76, 158, 235, 0.8));
+}
+
 /* ///////// */
 
 /* EDUCATION */

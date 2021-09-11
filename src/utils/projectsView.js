@@ -47,9 +47,14 @@ export default function projectsView (arr, parentElement) {
         pDescription.classList.add("description");
         pDescription.textContent = project.description;
 
+       
         li.append(header, pTech, pDescription);
         parentElement.appendChild(li)
     }
+
+     // CTA
+     const btn = '<a class="btn" href="https://raiesbo.com/" target="_blank">VISIT THE PORTFOLIO</a>';
+     parentElement.innerHTML += btn;
 }
 
 
