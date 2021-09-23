@@ -1,3 +1,4 @@
+import getData from './api/getData.js';
 import popAnimation from './animations/animation.js';
 import messages from './config/messages.js';
 import {
@@ -11,6 +12,8 @@ import {
     languagesView
 } from './utils';
 
+
+//console.log("data", getData())
 // import './css/styles.css';
 // import css from './css/translateClasses.css';
 
