@@ -1,11 +1,11 @@
 beforeEach(() => {
-    cy.visit('http://127.0.0.1:5500/')
+    cy.visit('http://127.0.0.1:5173/')
 })
 
 describe('picture side', () => {
     it('has a main picture', () => {
         cy.get('#main-picture')
-        .should('have.css', 'background-image', 'linear-gradient(to left, rgba(76, 158, 235, 0.8), rgba(6, 42, 75, 0.8)), url("http://127.0.0.1:5500/src/img/self_low.jpg")')
+            .should('have.css', 'background-image', 'linear-gradient(to left, rgba(76, 158, 235, 0.8), rgba(6, 42, 75, 0.8)), url("http://127.0.0.1:5173/src/img/self_low.jpg")')
     })
     it('has a h1 title', () => {
         ""
@@ -27,7 +27,7 @@ describe('information side', () => {
     })
     it('has a button and access the portfolio with it', () => {
         cy.get('a.btn[href="https://raiesbo.com/"]').as('btn').should('exist');
-    
+
     })
     it('has a main picture', () => {
         ""
