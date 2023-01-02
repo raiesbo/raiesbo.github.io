@@ -24,4 +24,4 @@ jobs:
         cache: 'npm'
     - run: npm i
     - run: npm run build
-    - run: npm run cypress:ci
+    - run: npm run cy:ci
