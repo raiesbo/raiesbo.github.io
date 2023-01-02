@@ -22,6 +22,6 @@ jobs:
       with:
         node-version: '14'
         cache: 'npm'
-    - run: npm ci
+    - run: npm i
     - run: npm run build
-    - run: npm run cypress
+    - run: npm run cypress:ci
