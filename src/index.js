@@ -1,26 +1,14 @@
-import getData from './api/getData.js';
 import popAnimation from './animations/animation.js';
 import messages from './config/messages.js';
 import {
-    contactLinksView,
-    profileTranslator,
-    skillsView,
-    projectsView,
-    educationView,
-    experienceView,
-    certsView,
-    languagesView
+    certsView, contactLinksView, educationView,
+    experienceView, languagesView, profileTranslator, projectsView, skillsView
 } from './utils';
-
-
-//console.log("data", getData())
-// import './css/styles.css';
-// import css from './css/translateClasses.css';
 
 popAnimation();
 
-const {header, sections} = messages;
-const {profile, skills, projects, education, experience, certs, languages} = sections;
+const { header, sections } = messages;
+const { profile, skills, projects, education, experience, certs, languages } = sections;
 
 // VARIABLES LEFT
 const name = document.querySelector("#name");
