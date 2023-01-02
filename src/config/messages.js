@@ -42,19 +42,19 @@ const messages = {
         ],
         skills: [
             {
-                label:"Languages",
+                label: "Languages",
                 content: "JavaScript, HTML, CSS, Python"
             },
             {
-                label:"Libraries & Frameworks",
+                label: "Libraries & Frameworks",
                 content: "React, Next, Node, Sass, Jest, Cypress, D3js"
             },
             {
-                label:"Tools",
+                label: "Tools",
                 content: "Git(GitHub & GitLab), MongoDB, Heroku, Firebase, Postman"
             },
             {
-                label:"Design",
+                label: "Design",
                 content: "Photoshop, Figma. Illustrator, InDesign"
             }
         ],
@@ -121,10 +121,17 @@ const messages = {
         ],
         experience: [
             {
+                position: "Software Engineer",
+                company: "Schädlingsbekämpfung24",
+                place: "Berlin, Germany",
+                date: "08.2022 - present",
+                tasks: []
+            },
+            {
                 position: "Full Stack Developer",
                 company: "Webgears Group",
                 place: "Berlin, Germany",
-                date: "08.2021 - present",
+                date: "08.2021 - 07.2022",
                 tasks: [
                     "Next.js aplication developement for multiple voucher white-labels and portals. ",
                     "Unit, E2E, Regression testing implementation using Cypress and Jest.",

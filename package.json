@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "cypress:open": "cypress open",
-    "cypress": "cypress"
+    "cypress": "cypress run --browser chrome"
   },
   "repository": {
     "type": "git",
