@@ -10,4 +10,4 @@ GitHub Pages
 - CSS animations
 - CSS pseudo-class
 - Linear gradient background with image
-- Vite modules bundler
+- Vite moduls bundler
