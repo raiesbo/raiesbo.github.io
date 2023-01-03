@@ -1,4 +1,4 @@
-name: Node.js CI Workflow
+name: Node.js CI/CD Workflow
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
   workflow_dispatch: # To trigger the workflow manually
 
 jobs:
-  ci-tests:
+  ci-cd:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -21,3 +21,14 @@ jobs:
       run: npm run build
     - name: Run tests
       run: npm run cy:ci
+    - name: Deploy
+      run: |
+        git config --global user.name $user_name
+        git config --global user.email $user_email
+        git remote set-url origin https://${github_token}@github.com/${repository}
+        npm run deploy
+      env:
+        user_name: ${{ secrets.USER_NAME }}
+        user_email: ${{ secrets.USER_EMAIL }}
+        github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+        repository: ${{ github.repository }}
