@@ -44,4 +44,4 @@ export default function experienceView (arr, parentElement) {
         parentElement.appendChild(li);
     }
 
-};
+}

@@ -11,17 +11,17 @@ const sections = [descriptSect, skillsSect, projectsSect, educationSect, expSect
 // console.log(certsSect.parentElement)
 // console.log(certsSect.children)
 
-const paths = {
-    "description": descriptSect,
-    "skills": skillsSect,
-    "projects": projectsSect,
-    "education": educationSect,
-    "experience": expSect,
-    "certs": certsSect,
-    "languages": langSect
-};
+// const paths = {
+//     "description": descriptSect,
+//     "skills": skillsSect,
+//     "projects": projectsSect,
+//     "education": educationSect,
+//     "experience": expSect,
+//     "certs": certsSect,
+//     "languages": langSect
+// };
 
-const pathsArr = Object.values(sections)
+// const pathsArr = Object.values(sections)
 // const keyArr = Object.keys(sections)
 
 // console.log(pathsArr)
@@ -53,7 +53,7 @@ for (let i = 0; i < sections.length; i++) {
 
     })
 
-    sections[i].addEventListener("mouseout", (e) => {
+    sections[i].addEventListener("mouseout", () => {
         // console.log(e.target)
         solid(sections)
     })

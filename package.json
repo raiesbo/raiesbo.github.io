@@ -4,14 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3001",
     "build": "vite build",
     "preview": "vite preview",
     "cypress:open": "cypress open",
     "cy:run": "cypress run --browser chrome",
     "cy:ci": "run-p -r dev cy:run",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "homepage": "https://raiesbo.github.io",
   "devDependencies": {
     "cypress": "^12.2.0",
+    "eslint": "^8.31.0",
     "gh-pages": "^4.0.0",
     "npm-run-all": "^4.1.5",
     "vite": "^4.0.0"

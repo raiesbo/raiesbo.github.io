@@ -28,4 +28,4 @@ export default function educationView (arr, parentElement) {
         li.append(header, p);
         parentElement.appendChild(li);
     }
-};
+}

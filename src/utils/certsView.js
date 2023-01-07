@@ -26,4 +26,4 @@ export default function certsView (arr, parentElement) {
         li.append(header, p);
         parentElement.appendChild(li);
     }
-};
+}

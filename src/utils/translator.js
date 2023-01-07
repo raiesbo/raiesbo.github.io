@@ -29,4 +29,4 @@ export default function profileTranslator (arr, parentElement) {
     }
 
     parentElement.appendChild(text);
-};
+}

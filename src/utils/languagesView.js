@@ -14,4 +14,4 @@ export default function languagesView (arr, parentElement) {
         li.append(h4, span);
         parentElement.appendChild(li);
     }
-};
+}
