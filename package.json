@@ -8,8 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "cypress:open": "cypress open",
-    "cy:run": "cypress run --browser chrome",
-    "cy:ci": "run-p -r dev cy:run",
+    "cypress:run": "cypress run --browser chrome",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint ./src",
@@ -24,7 +23,6 @@
     "cypress": "^12.2.0",
     "eslint": "^8.31.0",
     "gh-pages": "^4.0.0",
-    "npm-run-all": "^4.1.5",
     "vite": "^4.0.0"
   }
 }
