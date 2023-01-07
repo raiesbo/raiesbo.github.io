@@ -103,7 +103,7 @@ const messages = {
             {
                 title: "Postgrad. Web Development and Design",
                 university: "Open University of Catalonia",
-                date: "2021 - Present",
+                date: "2021 - 2022",
                 extraInfo: null
             },
             {
@@ -133,7 +133,7 @@ const messages = {
                 place: "Berlin, Germany",
                 date: "08.2021 - 07.2022",
                 tasks: [
-                    "Next.js aplication developement for multiple voucher white-labels and portals. ",
+                    "Next.js aplication developement for multiple voucher white-labels and portals.",
                     "Unit, E2E, Regression testing implementation using Cypress and Jest.",
                     "Web optimization for better performance in Lighthouse"
                 ]
