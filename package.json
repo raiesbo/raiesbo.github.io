@@ -9,8 +9,6 @@
     "preview": "vite preview",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --browser chrome",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix"
   },
@@ -20,9 +18,8 @@
   },
   "homepage": "https://raiesbo.github.io",
   "devDependencies": {
-    "cypress": "^12.2.0",
-    "eslint": "^8.31.0",
-    "gh-pages": "^4.0.0",
-    "vite": "^4.0.0"
+    "cypress": "12.2.0",
+    "eslint": "8.31.0",
+    "vite": "4.0.0"
   }
 }

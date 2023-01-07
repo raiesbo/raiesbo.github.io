@@ -125,7 +125,11 @@ const messages = {
                 company: "Schädlingsbekämpfung24",
                 place: "Berlin, Germany",
                 date: "08.2022 - present",
-                tasks: []
+                tasks: [
+                    "Next.js Service providers platform development to manage their accepted deals.",
+                    "Frontend and Backend integration with Hubspot products.",
+                    "CI/CD management with GitHub actions and Google Cloud Platform.",
+                ]
             },
             {
                 position: "Full Stack Developer",
@@ -135,7 +139,7 @@ const messages = {
                 tasks: [
                     "Next.js aplication developement for multiple voucher white-labels and portals.",
                     "Unit, E2E, Regression testing implementation using Cypress and Jest.",
-                    "Web optimization for better performance in Lighthouse"
+                    "Web optimization for better performance in Lighthouse."
                 ]
             },
             {
