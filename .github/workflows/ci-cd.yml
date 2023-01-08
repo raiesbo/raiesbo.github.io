@@ -31,9 +31,9 @@ jobs:
     - name: Cypress
       uses: cypress-io/github-action@v5
       with:
-          browser: chrome
-          start: npm run dev
-          wait-on: 'http://localhost:3001'
+        browser: chrome
+        start: npm run dev
+        wait-on: 'http://localhost:3001'
 
   build:
     needs: test
@@ -47,7 +47,7 @@ jobs:
       run: npm ci
     - name: Build
       run: npm run build
-    - name: Upload math result for job 2
+    - name: Upload Build
       uses: actions/upload-artifact@v3
       with:
         name: build-project
