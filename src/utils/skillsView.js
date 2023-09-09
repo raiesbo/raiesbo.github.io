@@ -1,17 +1,17 @@
 export default function skillsView(arr, parentElement) {
     for (let j = 0; j < arr.length; j++) {
         const li = document.createElement("li");
-        const spanTitle = document.createElement("span");
-        const spanList = document.createElement("span");
+        const pTitle = document.createElement("p");
+        const pList = document.createElement("p");
 
-        spanTitle.classList.add("skill-category");
-        spanList.classList.add("skill-list");
+        pTitle.classList.add("skill-category");
+        pList.classList.add("skill-list");
 
-        spanTitle.textContent = arr[j].label;
-        spanList.textContent = arr[j].content;
+        pTitle.textContent = arr[j].label;
+        pList.textContent = arr[j].content;
 
-        li.appendChild(spanTitle)
-        li.appendChild(spanList)
+        li.appendChild(pTitle)
+        li.appendChild(pList)
         parentElement.appendChild(li);
     }
 }
