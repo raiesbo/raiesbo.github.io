@@ -43,15 +43,15 @@ const messages = {
         skills: [
             {
                 label: "Languages",
-                content: "JavaScript, HTML, CSS, Python"
+                content: "JavaScript, TypeScript, HTML, CSS, PHP, Python"
             },
             {
                 label: "Libraries & Frameworks",
-                content: "React, Next, Node, Sass, Jest, Cypress, D3js"
+                content: "ReactJS, Next.js, Node.js, Sass, Jest, Cypress, Playwright, D3js"
             },
             {
                 label: "Tools",
-                content: "Git(GitHub & GitLab), MongoDB, Heroku, Firebase, Postman"
+                content: "Git (GitHub & GitLab), GCP, MongoDB, PostgreSQL, Netlify, Vercel, Firebase, Postman, GCP, Hubspot, Auth0, Jira/Confluence"
             },
             {
                 label: "Design",
@@ -59,6 +59,19 @@ const messages = {
             }
         ],
         projects: [
+            {
+                title: "Food Tracker",
+                technologies: "Next.js, TypeScript, Sass, Prisma, Auth0, PostgreSQL",
+                description: "Platform that seeks to increase the visibility of food trucks from any city and expose its quality and diversity while creating interactions with the users.It also provides additional value to the service providers by including features such as the possibility of creating orders.",
+                links: {
+                    repo: "hhttps://github.com/raiesbo/food-tracker",
+                    website: "https://food-tracker-tfm.vercel.app/"
+                },
+                icons: {
+                    repo: "fab fa-github-square fa-lg",
+                    website: "fas fa-external-link-square-alt fa-lg"
+                }
+            },
             {
                 title: "raiesbo.com",
                 technologies: "React, Sass",
@@ -84,26 +97,13 @@ const messages = {
                     repo: "fab fa-github-square fa-lg",
                     website: "fas fa-external-link-square-alt fa-lg"
                 }
-            },
-            {
-                title: "webDevArchive",
-                technologies: "React, CSS, Node, Express, MongoDB.",
-                description: "List of all the finished and on going projects untill the current date. Each project contains github/urls links if available and is organiced by date so the top projects are the most current ones.",
-                links: {
-                    repo: "https://github.com/raiesbo/webDevArchive",
-                    website: "https://archive.raiesbo.com/"
-                },
-                icons: {
-                    repo: "fab fa-github-square fa-lg",
-                    website: "fas fa-external-link-square-alt fa-lg"
-                }
             }
         ],
         education: [
             {
-                title: "Postgrad. Web Development and Design",
+                title: "Master’s Degree in Web Apps and Websites Development",
                 university: "Open University of Catalonia",
-                date: "2021 - 2022",
+                date: "2021 - 2023",
                 extraInfo: null
             },
             {
@@ -122,12 +122,12 @@ const messages = {
         experience: [
             {
                 position: "Software Engineer",
-                company: "Schädlingsbekämpfung24",
+                company: "ServiceHero",
                 place: "Berlin, Germany",
                 date: "08.2022 - present",
                 tasks: [
-                    "Next.js Service providers platform development to manage their accepted deals.",
-                    "Frontend and Backend integration with Hubspot products.",
+                    "Next.js/TypeScript Service providers platform development to manage their accepted deals.",
+                    "Frontend and Backend integration with Hubspot services and database.",
                     "CI/CD management with GitHub actions and Google Cloud Platform.",
                 ]
             },
