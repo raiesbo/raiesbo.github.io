@@ -1,4 +1,4 @@
-export default function projectsView (arr, parentElement) {
+export default function projectsView(arr, parentElement) {
     for (let j = 0; j < arr.length; j++) {
         const project = arr[j];
 
@@ -20,6 +20,7 @@ export default function projectsView (arr, parentElement) {
         aGit.setAttribute("href", project.links.repo);
         aGit.setAttribute("target", "_blanck");
         aGit.setAttribute("rel", "noreferrer");
+        aGit.setAttribute("aria-label", `${project.name}-github`);
         const iGit = document.createElement("i");
         addClassList(iGit, project.icons.repo)
         aGit.appendChild(iGit);
@@ -29,10 +30,11 @@ export default function projectsView (arr, parentElement) {
         aWeb.setAttribute("href", project.links.website);
         aWeb.setAttribute("target", "_blanck");
         aWeb.setAttribute("rel", "noreferrer");
+        aWeb.setAttribute("aria-label", `${project.name}-url`);
         const iWeb = document.createElement("i");
         addClassList(iWeb, project.icons.website);
         aWeb.appendChild(iWeb);
-    
+
         spanLinks.append(aGit, aWeb);
         header.append(h4, spanLinks)
 
@@ -47,20 +49,20 @@ export default function projectsView (arr, parentElement) {
         pDescription.classList.add("description");
         pDescription.textContent = project.description;
 
-       
+
         li.append(header, pTech, pDescription);
         parentElement.appendChild(li)
     }
 
-     // CTA
-     const btn = '<a class="btn" href="https://raiesbo.com/" target="_blank">VISIT THE PORTFOLIO</a>';
-     parentElement.innerHTML += btn;
+    // CTA
+    const btn = '<a class="btn" href="https://raiesbo.com/" target="_blank">VISIT THE PORTFOLIO</a>';
+    const btnLi = document.createElement("li")
+    btnLi.innerHTML += btn;
+    parentElement.append(btnLi);
 }
 
 
 const addClassList = (element, classList) => {
     const arr = classList.split(" ");
-    for (let i = 0; i < arr.length; i++) {
-        element.classList.add(arr[i]);
-    }
+    arr.forEach(elClass => element.classList.add(elClass));
 };

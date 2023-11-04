@@ -1,6 +1,6 @@
 :root {
     --main-text-color: #000000;
-    --alt-text-color: #636362;
+    --alt-text-color: #353535;
     --alt2-text-color: #aaa;
     --special-text-color: #4e9feb;
     --white-text-color: #fff;
@@ -284,6 +284,7 @@ li {
 }
 
 a.btn {
+    display: block;
     text-decoration: none;
     width: 100%;
     padding: 10px;
