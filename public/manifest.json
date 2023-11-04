@@ -1,0 +1,46 @@
+{
+    "name": "CV Raimon Espasa Bou",
+    "short_name": "CV Raiesbo",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Curriculum Vitae from Raimon Espasa Bou",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "../src/img/favicon.ico",
+            "sizes": "48x48",
+            "type": "image/ico"
+        },
+        {
+            "src": "../src/img/cv-logo.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "../src/img/self_low_2.jpg",
+            "sizes": "3036x3000",
+            "type": "image/jpg"
+        },
+        {
+            "src": "../src/img/self_low_3.jpg",
+            "sizes": "3036x3000",
+            "type": "image/jpg"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "../src/img/screenshot-wide.png",
+            "sizes": "667x381",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Home page screenshot"
+        },
+        {
+            "src": "../src/img/screenshot-narrow.png",
+            "sizes": "376x671",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Home page screenshot"
+        }
+    ]
+}
