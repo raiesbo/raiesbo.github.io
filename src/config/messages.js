@@ -201,7 +201,7 @@ const messages = {
             },
             {
                 language: "German",
-                level: "Upper intermediate"
+                level: "Intermediate"
             },
             {
                 language: "English",

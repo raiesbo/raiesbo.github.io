@@ -196,14 +196,13 @@ li {
 }
 
 .section-title {
-    /* color: var(--special-text-color); */
     background-image: linear-gradient(to right, rgb(61, 142, 218), rgba(76, 158, 235, 0.8));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 0.95rem;
     text-transform: uppercase;
     margin-bottom: 10px;
-    /* background-color: red; */
 }
 
 .section-body {
